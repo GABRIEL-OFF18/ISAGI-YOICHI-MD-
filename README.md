@@ -1,11 +1,9 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=150&section=header&text=Bienvenidos%20-%20xLancelot%20Bot%20💛&fontSize=30&fontColor=FFFFFF&animation=fadeIn" width="100%"/> 
 
-![Bienvenida Épica](https://github.com/WillZek/WillZek/blob/main/Crow.svg)
 
 > **`🪩 Versión Actual: 2.5.0`**  
 
-<a
-href="https://github.com/WillZek/CrowBot-ST/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/WillZek/CrowBot-ST?color=yellow&style=flat-square"></a>
+
 <a href="https://github.com/WillZek/CrowBot-ST/watchers"><img title="espectadores" src="https://img.shields.io/github/watchers/WillZek/CrowBot-ST?label=Espectadores&style=social"></a>
 
 </p>
@@ -15,7 +13,7 @@ ___
 
 ## 💛 **`L A N C E L O T  - B O T`**    
 
-![Menú Principal](https://files.catbox.moe/v8q8y2.jpg)
+![Menú Principal]([https://files.catbox.moe/s6uc0x.jpg])
 
 <a><img src='https://i.imgur.com/LyHic3i.gif'/></a>   
 
