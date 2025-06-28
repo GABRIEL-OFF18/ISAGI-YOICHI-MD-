@@ -42,10 +42,10 @@ global.rwait = '🕒'
 global.done = '✅'
 global.error = '✖️'
 
-//Emojis determinado de KatsuraBot
+//Emojis determinado de ISAGI YOICHI BOt
 global.emoji = '🚀'
 global.emoji2 = '⭐'
-global.emoji3 = '🌠'
+global.emoji3 = ' 🔫'
 global.emoji4 = '🍭'
 global.emoji5 = '✨'
 global.emojis = [emoji, emoji2, emoji3, emoji4, emoji5].getRandom()
@@ -83,7 +83,7 @@ global.readMore = more.repeat(850)
 
 global.authsticker = `┊🤖 Bot Ofc\n┊↳ ${wm}\n\n┊👑 Usuario\n┊↳ @${conn.getName(m.sender)}\n`;
 
-global.packsticker = `┊ 🔱 ᴛᴇᴀᴍ ᴍᴏᴏɴ ғᴏʀᴄᴇ\n↳https://Katsura-web.vercel.app/\n\n┊ 🎩 ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴏғᴄ\n↳https://github.com/Gabriel/KatsuraBot-ST`
+global.packsticker = `┊ 🔱 ᴛᴇᴀᴍ ᴍᴏᴏɴ ғᴏʀᴄᴇ\n↳https://Katsura-web.vercel.app/\n\n┊ 🎩 ɪɴғᴏʀᴍᴀᴄɪᴏɴ ᴏғᴄ\n↳https://github.com/Gabriel/ISAGI Bot-ST`
 
 //Fakes
 global.fkontak = { key: { participants:"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=51964351354:51964351354\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
@@ -94,7 +94,7 @@ global.fake = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo
 //Id Channel
 global.idchannel ='120363416506023663@newsletter'
 global.canalIdM = ["120363416506023663@newsletter", "120363420730325289@newsletter"]
-global.canalNombreM = ["✯ Katsura𝐁𝐨𝐭 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯", "⏤͟͟͞͞☆ Katsura𝐁𝐨𝐭 𝐓𝐞𝐬𝐭 『𝐏𝐨𝐝𝐜𝐚𝐬𝐭』"]
+global.canalNombreM = ["✯ Katsura𝐁𝐨𝐭 - 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✯", "⏤͟͟͞͞☆ ISAGI YOICHI 𝐁𝐨𝐭 𝐓𝐞𝐬𝐭 『𝐏𝐨𝐝𝐜𝐚𝐬𝐭』"]
 global.channelRD = await getRandomChannel()
 
 global.rcanal = { contextInfo: { isForwarded: true, forwardedNewsletterMessageInfo: { newsletterJid: channelRD.id, serverMessageId: 100, newsletterName: channelRD.name, }, externalAdReply: { showAdAttribution: true, title: textbot, body: dev, mediaUrl: null, description: null, previewType: "PHOTO", thumbnailUrl: icons, sourceUrl: redes, mediaType: 1, renderLargerThumbnail: false }, }, }}
