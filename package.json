@@ -3,7 +3,7 @@
   "version": "1.0.0-personalizado",
   "description": "Bot de WhatsApp con Baileys",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "modules",
   "scripts": {
     "start": "node index.js",
     "qr": "node index.js qr",
