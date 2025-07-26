@@ -179,7 +179,7 @@ chat.autoresponder = false
 
         let _user = global.db.data && global.db.data.users && global.db.data.users[m.sender]
 
-        const isROwner = [conn.decodeJid(global.conn.user.id),...global.owner.map(([n]) => n),...global.lidOwners.map(([n]) => n)].map(v => v.replace(/[^0-9]/g, '')).some(n => [`${n}@s.whatsapp.net`, `${n}@lid`].includes(m.sender))
+        const isROwner = [conn.decodeJid(global.conn.user.id), ...global.owner.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         const isOwner = isROwner || m.fromMe
         const isMods = isOwner || global.mods.map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
         // const isMods = [conn.decodeJid(global.conn.user.id), ...global.mods.map(([number]) => number)].map(v => v.replace(/[^0-9]/g, '') + '@s.whatsapp.net').includes(m.sender)
@@ -375,7 +375,7 @@ global.db.data.users[m.sender].spam = new Date * 1
                 else
                     m.exp += xp
                 if (!isPrems && plugin.estrellas && global.db.data.users[m.sender].estrellas < plugin.estrellas * 1) {
-                    conn.reply(m.chat, `Se agotaron tus *Estrellas* 🌟\n> Usa *#buy all* para comprar más estrellas 💫`, m, fake)
+                    conn.reply(m.chat, `Se agotaron tus *Estrellas* 🌟\n> Usa *#regalo* para obtener estrellas gratis 💫`, m, fake)
                     continue
                 }
                 let extra = {
@@ -511,15 +511,15 @@ console.error(e)
 
 global.dfail = (type, m, conn) => {
 const msg = {
-rowner: '《★》Esta función solo puede ser usada por mi creador', 
-owner: '《★》Esta función solo puede ser usada por mi desarrollador.', 
-mods: '《★》Esta función solo puede ser usada por los moderadores del bot', 
+rowner: '《★》Esta función solo puede ser usada por mi creador\n\n> Gabriel', 
+owner: '《★》Esta función solo puede ser usada por mi desarrollador.\n\n> Félix Manuel', 
+mods: '《★》Esta función solo puede ser usada por mi moderador\n\n> Félix Manuel', 
 premium: '《★》Esta función solo es para usuarios Premium.', 
 group: '《★》Esta funcion solo puede ser ejecutada en grupos.', 
 private: '《★》Esta función solo puede ser usada en chat privado.', 
 admin: '《★》Este comando solo puede ser usado por admins.', 
 botAdmin: '《★》Para usar esta función debo ser admin.',
-unreg: `《★》No te encuentras registrado, registrese para usar esta función\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Katsura.18*`,
+unreg: `《★》No te encuentras registrado, registrese para usar esta función\n*/reg nombre.edad*\n\n*Ejemplo* : */reg Lancelot.14*`,
 restrict: '《★》Esta característica esta desactivada.'
 }[type];
 if (msg) return conn.reply(m.chat, msg, m, rcanal).then(_ => m.react('✖️'))}
